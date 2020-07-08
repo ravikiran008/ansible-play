@@ -1,8 +1,8 @@
 ---
-- hosts: us
+- hosts: devops 
   gather_facts: True
   tasks:
     - name: Installing Telnet sing ansible playbook
-        yum:
-         name: telnet
-         state: installed
+      yum:
+       name: telnet
+       state: installed
