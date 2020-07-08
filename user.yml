@@ -1,0 +1,10 @@
+---
+- hosts: us
+      gather_facts: True
+      tasks:
+       - name: Add the user 'devops' with a specific uid and a primary group of 'admin'
+         user:
+          name: devops
+          comment: devops-eng
+          uid: 1040
+          group: root 
